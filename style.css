@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
@@ -49,25 +51,29 @@ input {
     outline: none;
     background-color: transparent;
     padding: 10px;
-    font-weight: 14px;
 }
 
 button {
     border: none;
     outline: none;
     padding: 16px 50px;
-    background-color: #ff5945;
+    background-color: #6D31EE;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+    transition: background-color .3s ease-in-out;
+}
+
+button:hover {
+    background-color: #AA9DFA;
 }
 
 ul li {
     position: relative;
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 50px;
+    padding: 13px 8px 13px 50px;
     user-select: none;
     cursor: pointer;
 }
@@ -83,6 +89,7 @@ ul li::before {
     background-position: center;
     top: 9px;
     left: 8px;
+    transition: all .3s ease-in-out;
 }
 
 ul li.checked {
@@ -91,7 +98,7 @@ ul li.checked {
 }
 
 ul li.checked::before {
-    background-image: url("img/checked.png");
+    background-image: url("img/checked.svg");
     transition: all .3s ease-in-out;
 }
 
@@ -101,7 +108,7 @@ ul li span {
     top: 5px;
     width: 40px;
     height: 40px;
-    font-size: 22px;
+    font-size: 30px;
     color: #555;
     line-height: 40px;
     text-align: center;
